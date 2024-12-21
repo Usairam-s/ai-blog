@@ -1,8 +1,6 @@
 import AllBlogs from "@/components/AllBlogs";
 import CategoriesList from "@/components/CategoriesList";
-import Footer from "@/components/Footer";
-import { ModeToggle } from "@/components/ModeToggle";
-import { Button } from "@/components/ui/button";
+
 import Image from "next/image";
 import { client, urlFor } from "./lib/sanity";
 
