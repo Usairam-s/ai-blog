@@ -3,6 +3,7 @@ import CategoriesList from "@/components/CategoriesList";
 
 import Image from "next/image";
 import { client, urlFor } from "./lib/sanity";
+export const revalidate = 30;
 
 // gte all blog
 async function getData() {

@@ -12,6 +12,8 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
+export const revalidate = 30;
+
 // gte all blog
 async function getData() {
   const query = `*[_type == "blog"] | order(_createdAt desc) {
