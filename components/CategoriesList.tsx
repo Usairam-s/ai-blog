@@ -25,7 +25,7 @@ export default async function CategoriesList() {
         {data?.map((item: any, idx: any) => (
           <Link
             href="#"
-            className={`flex items-center justify-center p-2 shadow-md rounded-md dark:text-black font-semibold `}
+            className={`flex dark:border dark:text-white items-center justify-center p-2 shadow-md rounded-md  font-semibold `}
             key={idx}
           >
             {item.title}{" "}
