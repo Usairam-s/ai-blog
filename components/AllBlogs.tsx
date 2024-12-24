@@ -42,32 +42,6 @@ export default async function AllBlogs() {
     <div className="mt-14 mb-8">
       <h2 className="font-semibold mb-8 text-3xl">Latest Blogs</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {/* <div className="border flex flex-col gap-4 shadow-md rounded-md p-4">
-          <div className="w-full">
-            <Image
-              alt="img"
-              src="/sample.jpg"
-              width={300}
-              height={300}
-              className="rounded-md shadow-sm"
-            />
-          </div>
-
-          <span className="bg-purple-500 w-fit font-semibold text-white p-1 text-xs rounded-md shadow-sm">
-            Health Care
-          </span>
-
-          <p className="text-muted-foreground text-xl font-semibold">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
-            amet nulla auctor, vestibulum magna sed, convallis ex.
-          </p>
-          <Button
-            className="font-bold py-
-                2 px-4 rounded"
-          >
-            <Link href={"#"}>Read More</Link>
-          </Button>
-        </div> */}
         {data?.map((item: any, idx: any) => (
           <Card key={idx}>
             <CardHeader className="flex flex-col gap-2">

@@ -47,7 +47,7 @@ export default async function page({ params }: { params: { slug: string } }) {
         className="object-cover rounded-md mx-auto w-full shadow-md relative max-h-[70vh] "
         priority
       />
-      <div className=" w-full mx-auto prose prose-headings:text-3xl prose-a:text-blue-500 prose-lg prose-black dark:prose-invert prose-li:marker:text-primary">
+      <div className=" w-full max-w-6xl mx-auto prose prose-headings:text-3xl prose-a:text-blue-500 prose-lg prose-black dark:prose-invert prose-li:marker:text-primary">
         <PortableText value={data.content} />
       </div>
     </div>
