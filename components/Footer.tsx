@@ -54,7 +54,7 @@ export default function Footer() {
   return (
     <div className="bg-black dark:bg-white text-white dark:text-black  w-full ">
       {/* muhammaduseram@gmail.com */}
-      <p className="text-center pt-12 pb-4 md:text-5xl text-4xl font-semibold ">
+      <p className="text-center pt-10 pb-4 md:text-5xl text-4xl font-semibold ">
         Contact Us
       </p>
       <div className="max-w-6xl  p-8 mx-auto flex md:justify-between md:flex-row flex-col md:gap-40 gap-6">
