@@ -32,7 +32,7 @@ export default async function page({ params }: { params: { slug: string } }) {
       <Link className="border p-1 rounded-md w-fit" href={"/"}>
         <ArrowLeft size={20} />
       </Link>
-      <p className="bg-purple-500 w-fit p-1 text-xs font-semibold rounded-md text-white">
+      <p className="bg-black dark:bg-white dark:text-black w-fit p-1 text-xs font-semibold rounded-md text-white">
         {data?.category?.title}
       </p>
       <h1 className="md:text-5xl sm:text-4xl text-3xl leading-snug font-bold">

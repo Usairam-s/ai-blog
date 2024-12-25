@@ -55,7 +55,7 @@ export default async function Home() {
         <div className="absolute max-w-[500px] flex flex-col gap-2 -bottom-8 left-20 p-4 text-black bg-white rounded-md shadow-xl">
           {/* tag{" "} */}
           <span
-            className={`${data[0]?.category?.color || ""} w-fit font-semibold text-white p-1 text-xs rounded-md shadow-sm`}
+            className={`bg-black w-fit font-semibold text-white p-1 text-xs rounded-md shadow-sm`}
           >
             {data[0]?.category?.title}
           </span>

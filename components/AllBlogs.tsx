@@ -33,7 +33,7 @@ export default function AllBlogs({ blogs, categories }: BlogProps) {
           {categories?.map((item: any, idx: any) => (
             <div
               // href="#"
-              className={`flex dark:border dark:text-white items-center justify-center p-2 shadow-md cursor-pointer rounded-md  font-semibold `}
+              className={` ${item.title == category ? "dark:bg-white dark:text-black bg-black text-white" : ""}  dark:border flex items-center justify-center p-2 shadow-md cursor-pointer rounded-md  font-semibold `}
               key={idx}
               onClick={() => setCategory(item.title)}
             >
@@ -75,7 +75,7 @@ export default function AllBlogs({ blogs, categories }: BlogProps) {
                     />
                   </CardTitle>
                   <CardDescription
-                    className={`${item?.category?.color} w-fit p-1 text-xs font-semibold rounded-md text-white`}
+                    className={`bg-black dark:bg-white w-fit p-1 text-xs font-semibold rounded-md dark:text-black text-white`}
                   >
                     {item?.category?.title}
                   </CardDescription>
