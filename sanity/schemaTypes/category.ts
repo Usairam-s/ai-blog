@@ -8,5 +8,10 @@ export default {
       type: 'string',
       title: 'Category Title',
     },
+    {
+      name: 'color',
+      type: 'string',
+      title: 'Category Color',
+    },
   ],
 }
