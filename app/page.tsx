@@ -59,7 +59,7 @@ export default async function Home() {
           >
             {data[0]?.category?.title}
           </span>
-          <h2 className="text-2xl font-semibold text-black">
+          <h2 className="md:text-2xl text-xl font-semibold text-black">
             {data[0]?.title}
           </h2>
         </div>

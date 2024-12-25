@@ -27,13 +27,13 @@ export default function AllBlogs({ blogs, categories }: BlogProps) {
   return (
     <>
       <div className="mt-20">
-        <h2 className="mb-8 font-semibold text-3xl">AI in</h2>
+        <h2 className="mb-8 font-semibold md:text-3xl text-2xl">AI in</h2>
 
         <div className=" grid lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-4">
           {categories?.map((item: any, idx: any) => (
             <div
               // href="#"
-              className={` ${item.title == category ? "dark:bg-white dark:text-black bg-black text-white" : ""}  dark:border flex items-center justify-center p-2 shadow-md cursor-pointer rounded-md  font-semibold `}
+              className={` ${item.title == category ? "dark:bg-white dark:text-black bg-black text-white" : ""}  dark:border flex items-center justify-center md:p-2 md:text-base p-1 text-sm shadow-md cursor-pointer rounded-md  font-semibold `}
               key={idx}
               onClick={() => setCategory(item.title)}
             >
@@ -45,7 +45,7 @@ export default function AllBlogs({ blogs, categories }: BlogProps) {
 
       <div className="mt-14 mb-8">
         <div className="w-full mb-8 flex items-center justify-between">
-          <h2 className="font-semibold text-3xl">
+          <h2 className="font-semibold md:text-3xl text-2xl">
             {category ? `${category} Blogs` : "Latest Blogs"}
           </h2>
           {category && (
